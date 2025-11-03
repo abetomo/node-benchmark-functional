@@ -1,5 +1,5 @@
 const n = 100
-const data = Array.from({ length: 1000 }, (_, i) => i * 2)
+const data = Array.from({ length: 1000 }, (_, i) => i)
 
 console.time('forEach')
 for (let t = 0; t < n; t++) {
