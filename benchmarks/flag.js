@@ -1,4 +1,4 @@
-const n = 100_000
+const n = 1_000_000
 
 console.time('no reassignment IIFE')
 for (let t = 0; t < n; t++) {

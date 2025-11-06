@@ -1,4 +1,4 @@
-const n = 100
+const n = 10_000
 const data = Array.from({ length: 1000 }, (_, i) => i)
 
 console.time('forEach')
