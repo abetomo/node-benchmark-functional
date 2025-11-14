@@ -39,3 +39,11 @@ for (let t = 0; t < n; t++) {
   }
 }
 console.timeEnd('reassignment')
+
+// Since it's Boolean, you could just assign it directly without using the ternary operator,
+// but I want to benchmark the same processing, so the benchmark uses the ternary operator.
+console.time('ternary operator')
+for (let t = 0; t < n; t++) {
+  const flag = t % 2 === 0 ? true : (t % 7 === 0 ? true : false)
+}
+console.timeEnd('ternary operator')
